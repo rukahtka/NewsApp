@@ -41,7 +41,7 @@ public class FragmentHome extends Fragment {
         layoutManager = new LinearLayoutManager(getContext(),1,false);
         recyclerView.setLayoutManager(layoutManager);
         requestQueue = Volley.newRequestQueue(getContext());
-        url = "https://newsapi.org/v2/top-headlines?country=in&language=en&apiKey=e4817342ce384e1bac78aa71e63b5ed1";
+        url = "https://newsapi.org/v2/top-headlines?country=in&language=en&apiKey=API_KEY";
         newsModelArrayList = new ArrayList<>();
         recyclerViewAdapter = new RecyclerViewAdapter(newsModelArrayList,getContext());
         recyclerView.setAdapter(recyclerViewAdapter);
